@@ -1,0 +1,15 @@
+title: "Benjamin Belot"
+description: "Blog personnel."
+url: "https://blog.benjaminbelot.fr"
+baseurl: ""
+lang: fr
+author: "Benjamin Belot"
+
+permalink: /:title/
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - .gitignore

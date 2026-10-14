@@ -1,0 +1,44 @@
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  font: 14px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: #2a7ae2; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #2a7ae2; outline-offset: 2px; }
+header { margin-bottom: 44px; }
+header h1 { font-size: 17px; font-weight: 600; margin: 0; }
+header h1 a { color: #111; }
+nav { margin-top: 8px; font-size: 12px; color: #828282; }
+nav a { color: #828282; margin-right: 14px; }
+ul.posts { list-style: none; padding: 0; margin: 0; }
+ul.posts li { display: flex; gap: 18px; margin-bottom: 7px; }
+ul.posts time { color: #828282; font-variant-numeric: tabular-nums; flex: 0 0 auto; }
+article { margin-bottom: 48px; }
+h1.post-title { font-size: 25px; line-height: 1.3; margin: 0 0 6px; }
+p.post-date { color: #828282; margin: 0 0 28px; font-size: 13px; }
+article p { margin: 0 0 18px; }
+blockquote { border-left: 3px solid #e2e2e2; margin: 0 0 18px; padding: 0 0 0 16px; color: #666; }
+pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; }
+pre { background: #f4f4f4; padding: 14px; overflow-x: auto; border-radius: 3px; }
+pre code { background: none; padding: 0; }
+img { max-width: 100%; height: auto; }
+hr { border: none; border-top: 1px solid #e8e8e8; margin: 32px 0; }
+footer { margin-top: 64px; font-size: 12px; color: #828282; }
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a1a; color: #e0e0e0; }
+  a { color: #6db3f2; }
+  header h1 a { color: #e0e0e0; }
+  nav, nav a, ul.posts time, p.post-date, footer { color: #9a9a9a; }
+  blockquote { border-left-color: #333; color: #9a9a9a; }
+  code { background: #242424; }
+  pre { background: #242424; }
+  hr { border-top-color: #2a2a2a; }
+}
