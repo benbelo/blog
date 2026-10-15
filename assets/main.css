@@ -104,18 +104,16 @@ footer .wrapper { padding-top: 30px; padding-bottom: 30px; }
   .post-title { font-size: 36px; }
   article h2 { font-size: 28px; }
   article h3 { font-size: 22px; }
-  .site-title, header h1 a { font-size: 22px; }
-  nav { float: none; line-height: 30px; }
+  /* en-tête : titre et menu empilés, au lieu de se coller sur une seule ligne */
+  .site-title, header h1 a { font-size: 22px; float: none; line-height: 1.3; }
+  header .wrapper { padding-top: 12px; padding-bottom: 12px; }
+  nav { float: none; line-height: 1.6; }
+  nav a { margin-left: 0; margin-right: 20px; }
+  nav a:last-child { margin-right: 0; }
+  /* liste d'articles : la date passe au-dessus du titre, plus de titre écartelé */
+  ul.posts li { display: block; margin-bottom: 16px; }
+  ul.posts time { display: block; margin-bottom: 2px; }
+  ul.posts a { font-size: 21px; line-height: 1.3; }
 }
 
-@media (prefers-color-scheme: dark) {
-  body { background-color: #1a1a1a; color: #e0e0e0; }
-  a { color: #6db3f2; }
-  .site-title, header h1 a, nav a { color: #e0e0e0; }
-  header { border-top-color: #9a9a9a; border-bottom-color: #2a2a2a; }
-  footer { border-top-color: #2a2a2a; }
-  .post-date, ul.posts time, footer { color: #9a9a9a; }
-  blockquote { border-left-color: #333; color: #9a9a9a; }
-  pre, code { background-color: #242424; border-color: #333; }
-  hr { border-bottom-color: #2a2a2a; }
-}
+/* Pas de mode sombre : le site est toujours clair, comme geohot. */
