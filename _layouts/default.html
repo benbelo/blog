@@ -10,9 +10,8 @@
   (function () {
     try {
       var t = localStorage.getItem('theme');
-      if (t !== 'light' && t !== 'dark') {
-        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
+      // Clair par défaut : on ne suit pas le réglage système, seul le bouton décide.
+      if (t !== 'dark') { t = 'light'; }
       document.documentElement.setAttribute('data-theme', t);
     } catch (e) {}
   })();
